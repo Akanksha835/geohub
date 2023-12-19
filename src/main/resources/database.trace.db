@@ -1,0 +1,6 @@
+2023-12-17 10:28:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COUNTRY" already exists; SQL statement:
+create table country( countryId INT PRIMARY KEY AUTO_INCREMENT, countryName varchar(255), currency varchar(255), population INT, latitude varchar(255), longitude varchar(255) ) [42101-214]
+2023-12-17 10:29:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into[*](cityName,population,latitude,longitude,countryId) values('Sydney',5634353,'19.0760° N','72.8777° E',3)"; expected "identifier"; SQL statement:
+insert into(cityName,population,latitude,longitude,countryId) values('Sydney',5634353,'19.0760° N','72.8777° E',3) [42001-214]
